@@ -14,3 +14,13 @@ for d in data:
         
 print('檔案讀取完畢，總共有', len(data), '筆資料')
 print('留言平均長度為', sum_len / len(data))
+
+
+new = []
+for d in data:
+    if len(d) < 100:
+        new.append(d)
+    
+print(new[0])
+
+
