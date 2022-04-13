@@ -14,7 +14,7 @@ for d in data:
         
 print('檔案讀取完畢，總共有', len(data), '筆資料')
 print('留言平均長度為', sum_len / len(data))
-
+#sum, average
 
 new = []
 for d in data:
@@ -22,5 +22,14 @@ for d in data:
         new.append(d)
     
 print(new[0])
+#filtering
+
+good = [d for d in data if 'good' in d]
+print('一共有', len(good), '筆留言提到good')
+
+bad = ['bad' in d for d in data]
+print(bad)
+#list comprehension快寫法篩選
+
 
 
